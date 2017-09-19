@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<title>P.S. 277</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/Header.jpg");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3 w3-dropdown-hover">
+        <button onclick="Animate()" class="w3-button w3-block w3-black">LINKS</button>
+        <div id="AnimatedMenu" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom">
+                <a href="pages/Parents" class="w3-block w3-button">Parents Corner</a>
+                <a href="pages/Reading-And-Math" class="w3-block w3-button">Reading / Math</a>
+                <a href="pages/Arts-Enrichment" class="w3-block w3-button">Arts & Enrichment</a>
+                <a href="pages/Important-Forms" class="w3-block w3-button">Important Forms</a>
+                <a href="pages/Faculty-And-Staff" class="w3-block w3-button">Faculty & Staff</a>
+                <a href="pages/Staff-Support" class="w3-block w3-button">Staff Support</a>
+                <a href="pages/slt" class="w3-block w3-button">SLT</a>
+                <a href="pages/Useful-Links" class="w3-block w3-button">Useful Links</a>
+                <a href="pages/Library" class="w3-block w3-button">Library</a>
+                <a href="pages/Calender" class="w3-block w3-button">Calender</a>
+                <a href="pages/School-News-Videos" class="w3-block w3-button">School News Videos</a>
+        </div>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">P.S. 277</span>
+  </div>
+  <div class="w3-display-bottommiddle w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">519 St Ann's Ave, Bronx, NY 10455</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">P.S. 277 Mission</span></h5>
+    <p>Our role as a community is to nourish, strengthen and empower the character, mind and voice of our children in order to cultivate future leaders and thinkers in our school, in our community, and in our world. </p>
+    <p>Together, we will build a sense of social responsibility, self efficacy, and self-confidence in order to prepare for college and future careers. </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"We will never stop struggling here in the Bronx, even though they've destroyed it around us. We would pitch tents if we have rather than move from here. We would fight back, there is nothing we would not do. They will never take us away from here.</i></p>
+      <p><i>I feel very much a part of this and I'm never going to leave. And, after me, My children will be here to carry on. I have very strong children and very strong grandchildren."</i></p>
+      <p>Dr. Evelyn Lopez-Antonetty</p>
+    </div>
+    <div class="center">
+            <img src="images/Evelina.jpg"class="w3-image">
+        </div>
+    <p><strong>Phone:</strong> (718) 292-3594 <strong>Fax:</strong> (718) 292-3630</p>
+    <p><strong>Address:</strong> 519 St Ann's Ave, Bronx, NY 10455</p>
+    <p><strong>Principal in Charge:</strong> Natasha Ferguson</p>
+    <p><strong>Assistant Principals:</strong> Adele Cammarata, Yvette Mejia</p>
+  </div>
+</div>
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Copyright © 2017 - All Rights Reserved - P.S. 277</p>
+</footer>
+
+<!-- Dropdown Animations -->
+<script>
+function Animate() {
+    var x = document.getElementById("AnimatedMenu");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</body>
+</html>
