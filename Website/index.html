@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<title>P.S. 277</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  body,
+  html {
+    background: #dfd7d7;
+  }
+</style>
+
+<body>
+
+  <header class="w3-container w3-black w3-mobile">
+    <div class="w3-container w3-center">
+      <h3>
+        <img src="images/logo.png" width="60" height="60" align="middle"> Dr. Evelina Lopez-Anotonetty Children's Literacy Center
+      </h3>
+    </div>
+    <div class="w3-container w3-white">
+      <div class="w3-bar w3-center">
+        <button class="w3-button w3-hover-aqua w3-ripple">Button</button>
+        <button class="w3-button w3-hover-aqua w3-ripple">Button</button>
+        <button class="w3-button w3-hover-aqua w3-ripple">Button</button>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="w3-content w3-section" style="max-width: 45%; background-position: center;">
+    <img class="mySlides w3-animate-fading Small" src="images/banner1.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading Small" src="images/banner2.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading Small" src="images/banner3.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading Small" src="images/banner4.jpg" style="width:100%">
+  </div>
+
+
+  <!-- Middle Container -->
+  <div class="w3-large">
+    <!-- About Section -->
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:1000px">
+        <h5 class="w3-center w3-padding-32">
+          <span class="w3-tag w3-wide">P.S. 277 Mission</span>
+        </h5>
+        <p>Our role as a community is to nourish, strengthen and empower the character, mind and voice of our children in order
+          to cultivate future leaders and thinkers in our school, in our community, and in our world. </p>
+        <p>Together, we will build a sense of social responsibility, self efficacy, and self-confidence in order to prepare
+          for college and future careers. </p>
+        <div class="w3-panel w3-leftbar w3-light-grey">
+          <p>
+            <i>"We will never stop struggling here in the Bronx, even though they've destroyed it around us. We would pitch
+              tents if we have rather than move from here. We would fight back, there is nothing we would not do. They will
+              never take us away from here.</i>
+          </p>
+          <p>
+            <i>I feel very much a part of this and I'm never going to leave. And, after me, My children will be here to carry
+              on. I have very strong children and very strong grandchildren."</i>
+          </p>
+          <p>Dr. Evelyn Lopez-Antonetty</p>
+        </div>
+        <div class="center">
+          <img src="images/Evelina.jpg" class="w3-image">
+        </div>
+
+        <hr>
+        <!-- Patnership Section -->
+        <h5 class="w3-center w3-padding-32">
+          <span class="w3-tag w3-wide">Parternship</span>
+        </h5>
+        <div class="w3-center">
+          <p>PS. 277 is currently in partnership with the following prestigious New York institutions to bring special programs
+            and activities to the students.</p>
+          <strong>
+            <a href="https://www.fan4kids.org/">Fan4Kids</a> |
+            <a href="http://www.ramapoforchildren.org/">Ramapo</a> |
+            <a href="http://StoryPirate.Org">Story Pirates</a> |
+            <a href="http://www.foodbanknyc.org">Cookshop</a> |
+            <a href="http://nyhistory.org">Historical Society</a> |
+            <a href="http:///www.changeforkids.org">Change For Kids</a> |
+            <a href="http://www.wediko.org/">Wediko</a> |
+            <a href="http://bronxzoo.com">Bronx Zoo</a> |
+            <a href="http://cmany.org">Childen's Musuem Of The Arts</a> |
+            <a href="http://www.thirdstreetmusicschool.org">3rd Street Music</a> |
+            <a href="http://www.cityparksfoundation.org:80/education/learning-gardens/">City Parks Learning Gardens</a> |
+            <a href="http://studioinaschool.org">Studio in a School</a> |
+            <a href="http://chessnyc.com">Chess NYC</a> |
+            <a href="http://brooklynartscouncil.org">Brooklyn Arts Council</a> |
+            <a href="http://artsconnection.org">Arts Connection</a>
+          </strong>
+        </div>
+        <hr>
+        <div class="w3-center">
+          <h5 class="w3-center w3-padding-32">
+            <span class="w3-tag w3-wide">Contact Information</span>
+          </h5>
+          <br>
+          <strong>Phone:</strong> (718) 292-3594
+          <strong>Fax:</strong> (718) 292-3630</br>
+          <strong>Address:</strong> 519 St Ann's Ave, Bronx, NY 10455
+          <br>
+          <strong>Principal in Charge:</strong> Natasha Bracey Ferguson</br>
+          <strong>Assistant Principals:</strong> Adele Cammarata, Yvette Mejia
+          <br></br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="w3-center w3-light-grey w3-padding-16 w3-large">
+    <p>Copyright © 2017 - All Rights Reserved - P.S. 277</p>
+  </footer>
+
+  <!-- Dropdown Animations -->
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 7000);
+    }
+  </script>
+</body>
+
+</html>

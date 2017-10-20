@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<title>P.S. 277 - Woopsie!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<style>
+body, html {
+    height: 100%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: white;
+    background-color: #23272A;
+}
+.resp {
+    width: 50%;
+    height: auto;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }
+}
+</style>
+<body>
+    <div class="w3-center w3-container w3-padding-64">
+      <h1 class="floating"> Hmmm, It seems you have hit a dead end<i class="em em-question"></i></h1>
+      <br/>
+      <img src="images/confused.gif" class="w3-image resp">
+    </div>
+</body>
+</html>
