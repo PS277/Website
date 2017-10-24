@@ -1,157 +1,185 @@
 <!DOCTYPE html>
 <html>
-<title>P.S. 277</title>
-<meta charset="UTF-8">
+<title>P.S. 277 - Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <style>
   body,
   html {
+    background: black;
     height: 100%;
     font-family: "Inconsolata", sans-serif;
-  }
-
-  .bgimg {
-    background-position: center;
-    background-size: cover;
-    background-image: url("images/Header.jpg");
-    min-height: 65%;
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .center {
-    margin: auto;
-    width: 30%;
-    border: 3px solid #73AD21;
-    padding: 10px;
+    color: white;
   }
 </style>
 
 <body>
 
-  <div class="w3-top">
-    <div class="w3-row w3-padding w3-black">
-      <div class="w3-col s3">
-        <a href="#" class="w3-button w3-block w3-black">HOME</a>
-      </div>
-      <div class="w3-col s3">
-        <a href="pages/Staff.html" class="w3-button w3-block w3-black">Staff Corner</a>
-      </div>
-      <div class="w3-col s3">
-        <a href="pages/Parents.html" class="w3-button w3-block w3-black">Parents Corner</a>
-      </div>
-      <div class="w3-col s3 w3-dropdown-hover">
-        <button onclick="Animate()" class="w3-button w3-block w3-black">Useful Link</button>
-        <div id="AnimatedMenu" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom">
-          <a href="pages/Staff.html" class="w3-block w3-button">Staff Corner</a>
-        </div>
-      </div>
+  <header class="w3-container w3-black w3-mobile">
+    <div class="w3-container w3-center">
+      <h3>
+        <img src="images/Logo.png" width="60" height="60" align="middle"> Dr. Evelina Lopez-Anotonetty Children's Literacy Center
+      </h3>
     </div>
-  </div>
-
-  <!-- Header with image -->
-  <header class="bgimg w3-display-container" id="home">
-    <div class="w3-display-middle w3-center">
-      <span class="w3-text-white" style="font-size:50px">Dr. Evelina Lopez-Antonetty Children's Literacy Center
-        <br>P.S 277</br>
-      </span>
-    </div>
-    <div class="w3-display-bottommiddle w3-center w3-padding-large w3-hide-small">
-      <span class="w3-tag">519 St Ann's Ave, Bronx, NY 10455</span>
+    <div class="w3-container w3-white">
+      <div class="w3-bar w3-center">
+        <a href="index.html" class="w3-button w3-hover-aqua">Home</a>
+        <a href="pages/about.html" class="w3-button w3-hover-aqua">About Us</a>
+        <a href="pages/parents.html" class="w3-button w3-hover-aqua">Parents Corner</a>
+        <a href="pages/staff.html" class="w3-button w3-hover-aqua">Staff Links</a>
+      </div>
     </div>
   </header>
 
 
-  <!-- Middle Container -->
-  <div class="w3-large">
-    <!-- About Section -->
-    <div class="w3-container" id="about">
-      <div class="w3-content" style="max-width:1000px">
-        <h5 class="w3-center w3-padding-32">
-          <span class="w3-tag w3-wide">P.S. 277 Mission</span>
-        </h5>
-        <p>Our role as a community is to nourish, strengthen and empower the character, mind and voice of our children in order
-          to cultivate future leaders and thinkers in our school, in our community, and in our world. </p>
-        <p>Together, we will build a sense of social responsibility, self efficacy, and self-confidence in order to prepare
-          for college and future careers. </p>
-        <div class="w3-panel w3-leftbar w3-light-grey">
-          <p>
-            <i>"We will never stop struggling here in the Bronx, even though they've destroyed it around us. We would pitch
-              tents if we have rather than move from here. We would fight back, there is nothing we would not do. They will
-              never take us away from here.</i>
-          </p>
-          <p>
-            <i>I feel very much a part of this and I'm never going to leave. And, after me, My children will be here to carry
-              on. I have very strong children and very strong grandchildren."</i>
-          </p>
-          <p>Dr. Evelyn Lopez-Antonetty</p>
-        </div>
-        <div class="center">
-          <img src="images/Evelina.jpg" class="w3-image">
-        </div>
+  <div class="w3-content w3-section" style="max-width: 45%; background-position: center;">
+    <img class="mySlides w3-animate-fading Small" src="images/banner1.JPG" style="width:100%">
+    <img class="mySlides w3-animate-fading Small" src="images/banner2.JPG" style="width:100%">
+    <img class="mySlides w3-animate-fading Small" src="images/banner3.JPG" style="width:100%">
+    <img class="mySlides w3-animate-fading Small" src="images/banner4.JPG" style="width:100%">
+  </div>
 
-        <hr>
-        <!-- Patnership Section -->
-        <h5 class="w3-center w3-padding-32">
-          <span class="w3-tag w3-wide">Parternship</span>
-        </h5>
-        <div class="w3-center">
-          <p>PS. 277 is currently in partnership with the following prestigious New York institutions to bring special programs
-            and activities to the students.</p>
-          <strong>
-            <a href="https://www.fan4kids.org/">Fan4Kids</a> |
-            <a href="http://www.ramapoforchildren.org/">Ramapo</a> |
-            <a href="http://StoryPirate.Org">Story Pirates</a> |
-            <a href="http://www.foodbanknyc.org">Cookshop</a> |
-            <a href="http://nyhistory.org">Historical Society</a> |
-            <a href="http:///www.changeforkids.org">Change For Kids</a> |
-            <a href="http://www.wediko.org/">Wediko</a> |
-            <a href="http://bronxzoo.com">Bronx Zoo</a> |
-            <a href="http://cmany.org">Childen's Musuem Of The Arts</a> |
-            <a href="http://www.thirdstreetmusicschool.org">3rd Street Music</a> |
-            <a href="http://www.cityparksfoundation.org:80/education/learning-gardens/">City Parks Learning Gardens</a> |
-            <a href="http://studioinaschool.org">Studio in a School</a> |
-            <a href="http://chessnyc.com">Chess NYC</a> |
-            <a href="http://brooklynartscouncil.org">Brooklyn Arts Council</a> |
-            <a href="http://artsconnection.org">Arts Connection</a>
-          </strong>
-        </div>
-        <hr>
-        <div class="w3-center">
-          <h5 class="w3-center w3-padding-32">
-            <span class="w3-tag w3-wide">Contact Information</span>
-          </h5>
-          <br>
-          <strong>Phone:</strong> (718) 292-3594
-          <strong>Fax:</strong> (718) 292-3630</br>
-          <strong>Address:</strong> 519 St Ann's Ave, Bronx, NY 10455
-          <br>
-          <strong>Principal in Charge:</strong> Natasha Bracey Ferguson</br>
-          <strong>Assistant Principals:</strong> Adele Cammarata, Yvette Mejia
-          <br></br>
+  <div class="w3-container w3-black w3-mobile w3-padding-small w3-center">
+    <div class="w3-container w3-cyan w3-center">
+      <h3>Contact Information</h3>
+    </div>
+    <strong>Phone:</strong> (718) 292-3594 |
+    <strong>Fax:</strong> (718) 292-3630
+    <br>
+    <strong>Address:</strong> 519 St Ann's Ave, Bronx, NY 10455</br>
+    <strong>
+      <u>Principal in Charge</u>:</strong> Natasha Bracey Ferguson
+    <strong>
+      <u>Assistant Principals</u>:</strong> Adele Cammarata, Yvette Mejia
+  </div>
+  <hr>
+
+  <!-- Middle Container -->
+  <div class="w3-row-padding w3-mobile">    
+    <div class="w3-container w3-padding-64 w3-mobile">
+
+      <!-- Announcements -->
+      <div class="w3-col w3-container w3-white w3-left w3-padding-small" style="width:40%; height:700px;">
+        <div class="w3-container w3-yellow w3-center">
+          <h3>
+            <u>Announcements</u>
+          </h3>
         </div>
       </div>
+
+      <div class="w3-col w3-container" style="width:10%">
+        <br>
+      </div>
+
+      <!-- Upcoming Events -->
+      <div class="w3-col w3-container w3-white w3-right w3-padding-small " style="width:40%;">
+        <div class="w3-container w3-yellow w3-center">
+          <h3>
+            <u>Upcoming Events</u>
+          </h3>
+        </div>
+        <div class="w3-container w3-mobile">
+          <h4 class="w3-center">
+            <u>Year 2017</u>
+          </h4>
+          <table class="w3-table w3-striped">
+            <tr>
+              <th>Date</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <th>November 7</th>
+              <th>Election Day: Students do not attend school.</th>
+            </tr>
+            <tr>
+              <th>November 23-24</th>
+              <th>Thanksgiving Recess: Schools are closed.</th>
+            </tr>
+            <tr>
+              <th>December 25-29</th>
+              <th>Winter Recess: Schools are closed.</th>
+            </tr>
+          </table>
+          <h4 class="w3-center">
+            <u>HAPPY NEW YEAR - 2018</u>
+          </h4>
+          <table class="w3-table w3-striped">
+            <tr>
+              <th>Date</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <th>January 2</th>
+              <th>Schools Resumes. First day of school.</th>
+            </tr>
+            <tr>
+              <th>January 15</th>
+              <th>Dr. Martin Luther King Jr. Day: Schools are closed.</th>
+            </tr>
+            <tr>
+              <th>February 19 - 23</th>
+              <th>Midwinter Recess: Schools are closed.</th>
+            </tr>
+            <tr>
+              <th>March 20</th>
+              <th>Spring Recess: Schools are closed.</th>
+            </tr>
+            <tr>
+              <th>April 2-6</th>
+              <th>Spring Recess: Schools are closed.</th>
+            </tr>
+            <tr>
+              <th>May 28</th>
+              <th>Memorial Day: Schools are closed.</th>
+            </tr>
+            <tr>
+              <th>June 7</th>
+              <th>Anniversary Day: Students do not attend school.</th>
+            </tr>
+            <tr>
+              <th>June 11</th>
+              <th>Clerical Day: Elementary & Midle School students do not attend school.</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+
     </div>
   </div>
+
+
+  <!-- Partnerships -->
+  <div class="w3-container w3-white w3-center w3-padding-small">
+    <div class="w3-container w3-cyan">
+      <h3>Partnerships</h3>
+    </div>
+    <div class="w3-image">
+      <img src="images/Partners.png">
+    </div>
+  </div>
+
   <!-- Footer -->
-  <footer class="w3-center w3-light-grey w3-padding-16 w3-large">
+  <footer class="w3-center w3-light-grey">
     <p>Copyright © 2017 - All Rights Reserved - P.S. 277</p>
   </footer>
 
-  <!-- Dropdown Animations -->
+  <!-- Slideshow Animations -->
   <script>
-    function Animate() {
-      var x = document.getElementById("AnimatedMenu");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else {
-        x.className = x.className.replace(" w3-show", "");
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
       }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 7000);
     }
   </script>
 </body>
